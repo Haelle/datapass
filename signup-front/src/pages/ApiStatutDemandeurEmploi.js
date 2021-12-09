@@ -43,8 +43,8 @@ export const CadreJuridiqueDescription = () => (
     <p>
       Pour pouvoir bénéficier du raccordement à l’API statut demandeur d'emploi,
       le cadre légal et réglementaire des fournisseurs de service doit permettre
-      à Direction de la Sécurité Sociale de transmettre des données personnelles
-      à votre entité administrative.
+      à Pôle Emploi de transmettre des données personnelles à votre entité
+      administrative.
     </p>
     <p>
       Dans le cas où vous représentez une collectivité, veuillez joindre la
