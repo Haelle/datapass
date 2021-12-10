@@ -50,6 +50,7 @@ export const DATA_PROVIDER_LABELS = {
   api_ensu_dad_production: 'API ENSU DAD (Production)',
   api_ingres_nomenclatures: 'API INGRES - Nomenclatures',
   api_ingres_noyau: 'API INGRES - Noyau',
+  api_indemnites_pole_emploi: 'API Indemnités Pôle Emploi',
 };
 
 export const DATA_PROVIDER_WITH_ENROLLMENTS_IN_PRODUCTION_ENV = [
@@ -115,6 +116,7 @@ export const DATA_PROVIDER_ICONS = {
   api_histovec: 'logo-minint.png',
   api_ensu_dad_sandbox: 'logo-dgfip-with-label.png',
   api_ensu_dad_production: 'logo-dgfip-with-label.png',
+  api_indemnites_pole_emploi: 'logo-pole-emploi.png',
 };
 
 export const DATA_PROVIDER_CONTACT_EMAILS = {
@@ -134,6 +136,7 @@ export const DATA_PROVIDER_CONTACT_EMAILS = {
   api_prestations_sociales: 'contact@apisecu.fr',
   api_service_national: 'dsnj-api.contact.fct@intradef.gouv.fr',
   cisirh: 'api.cisirh@finances.gouv.fr',
+  pole_emploi: 'support@pole-emploi.io',
 };
 
 export const DATA_PROVIDER_LABELLED_CONTACT_EMAILS = [

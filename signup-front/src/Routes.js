@@ -61,6 +61,7 @@ import ApiEnsuDadSandbox from './pages/DgfipPages/ApiEnsuDadSandbox';
 import ApiEnsuDadProduction from './pages/DgfipPages/ApiEnsuDadProduction';
 import ApiIngresNomenclatures from './pages/ApiIngresNomenclatures';
 import ApiIngresNoyau from './pages/ApiIngresNoyau';
+import ApiIndemnitesPoleEmploi from './pages/ApiIndemnitesPoleEmploi';
 
 export const Routes = ({ user }) => {
   const location = useLocation();
@@ -336,6 +337,10 @@ export const Routes = ({ user }) => {
         component={ApiIngresNoyau}
       />
 
+      <PrivateRoute
+        path="/api-indemnites-pole-emploi/:enrollmentId?"
+        component={ApiIndemnitesPoleEmploi}
+      />
       <PrivateRoute path="/admin" component={Admin} />
     </>
   );
