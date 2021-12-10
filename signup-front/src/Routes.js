@@ -61,6 +61,7 @@ import ApiEnsuDadSandbox from './pages/DgfipPages/ApiEnsuDadSandbox';
 import ApiEnsuDadProduction from './pages/DgfipPages/ApiEnsuDadProduction';
 import ApiIngresNomenclatures from './pages/ApiIngresNomenclatures';
 import ApiIngresNoyau from './pages/ApiIngresNoyau';
+import ApiStatutEtudiant from './pages/ApiStatutEtudiant';
 
 export const Routes = ({ user }) => {
   const location = useLocation();
@@ -334,6 +335,11 @@ export const Routes = ({ user }) => {
       <PrivateRoute
         path="/api-ingres-noyau/:enrollmentId?"
         component={ApiIngresNoyau}
+      />
+
+      <PrivateRoute
+        path="/api-statut-etudiant/:enrollmentId?"
+        component={ApiStatutEtudiant}
       />
 
       <PrivateRoute path="/admin" component={Admin} />
