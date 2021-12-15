@@ -48,8 +48,7 @@ export const DATA_PROVIDER_LABELS = {
   api_prestations_sociales_fc: 'API prestations sociales (FC)',
   api_ensu_dad_sandbox: 'API ENSU DAD (Bac à sable)',
   api_ensu_dad_production: 'API ENSU DAD (Production)',
-  api_ingres_nomenclatures: 'API INGRES - Nomenclatures',
-  api_ingres_noyau: 'API INGRES - Noyau',
+  api_ingres: 'API INGRES',
 };
 
 export const DATA_PROVIDER_WITH_ENROLLMENTS_IN_PRODUCTION_ENV = [

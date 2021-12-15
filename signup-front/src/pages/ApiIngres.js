@@ -41,8 +41,8 @@ const DonneesDescription = () => (
 const CadreJuridiqueDescription = () => (
   <>
     <p>
-      Pour pouvoir bénéficier du raccordement à l’API INGRES Noyau, le cadre
-      légal et réglementaire des fournisseurs de service doit permettre au
+      Pour pouvoir bénéficier du raccordement à l’API INGRES Nomenclatures, le
+      cadre légal et réglementaire des fournisseurs de service doit permettre au
       CISIRH de transmettre des données personnelles à votre entité
       administrative.
     </p>
@@ -51,15 +51,20 @@ const CadreJuridiqueDescription = () => (
 
 const availableScopes = [
   {
+    value: 'donnees_ingres_nomenclatures',
+    label: 'Ensemble des données INGRES Nomenclatures',
+    mandatory: true,
+  },
+  {
     value: 'donnees_ingres_noyau',
     label: 'Ensemble des données INGRES Noyau',
     mandatory: true,
   },
 ];
 
-const target_api = 'api_ingres_noyau';
+const target_api = 'api_ingres';
 
-const ApiIngresNoyau = ({
+const ApiIngres = ({
   match: {
     params: { enrollmentId },
   },
@@ -85,11 +90,11 @@ const ApiIngresNoyau = ({
       CadreJuridiqueDescription={CadreJuridiqueDescription}
     />
     <ÉquipeSection />
-    <CguSection cguLink="/docs/cgu_api_ingres_noyau_v0.3.pdf" />
+    <CguSection cguLink="/docs/cgu_api_ingres.pdf" />
   </Form>
 );
 
-ApiIngresNoyau.propTypes = {
+ApiIngres.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
       enrollmentId: PropTypes.string,
@@ -97,7 +102,7 @@ ApiIngresNoyau.propTypes = {
   }),
 };
 
-ApiIngresNoyau.defaultProps = {
+ApiIngres.defaultProps = {
   match: {
     params: {
       enrollmentId: null,
@@ -105,4 +110,4 @@ ApiIngresNoyau.defaultProps = {
   },
 };
 
-export default ApiIngresNoyau;
+export default ApiIngres;
